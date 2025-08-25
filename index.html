@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Clone Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero-container">
+        <div class="content-wrapper">
+            <!-- Navigation -->
+            <nav class="navigation">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#features" class="nav-item active">Features</a>
+                <a href="#pricingplan" class="nav-item active">Pricing</a>
+                <a href="#contactpage" class="nav-item active">Blog</a>
+                <img src="/assets/icons/menumiddle-icon.svg" alt="Dribbble" class="nav-icon" />
+                <img src="/assets/icons/fa-behance.svg" alt="Behance" class="nav-icon" />
+            </nav>
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <div class="startup-label">Startup 3</div>
+                <h1 class="hero-title">Forget About Code</h1>
+                <p class="hero-description">
+                    Startup Framework gives you complete freedom over your creative process — you don't have to think
+                    about any technical aspects. There are no limits and absolutely no coding.
+                </p>
+
+                <!-- Navigation Arrows -->
+                <div class="nav-arrows">
+                    <img src="/assets/fa-arrow-angle-left.svg" alt="Previous" class="fa-arrow-angle-left"
+                        onclick="previousSlide()" />
+                    <img src="/assets/fa-arrow-angle-right.svg" alt="Next" class="arrow" onclick="nextSlide()" />
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="bottom-section">
+                <!-- Pagination Dots -->
+                <div class="pagination-dots">
+                    <div class="dot active" onclick="goToSlide(0)"></div>
+                    <div class="dot" onclick="goToSlide(1)"></div>
+                    <div class="dot" onclick="goToSlide(2)"></div>
+                    <div class="dot" onclick="goToSlide(3)"></div>
+                    <div class="dot" onclick="goToSlide(4)"></div>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="#" class="cta-button">Create an Account</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Content Page -->
+    <Section id="home" class="Section home">
+        <div class="content">
+            <h4 class="freesmpl">Free Sample</h4>
+
+
+            <h2 class="contentheading">Powerful Generator and Free <br> Figma Sources </h2>
+
+            <p class="startuppar">Startup Framework contains components and complex blocks which can easily be
+                <br> integrated
+                into
+                almost
+                any design. All of the components are made in the same style, and <br> can easily be integrated into
+                projects, allowing you to create hundreds of solutions.
+            </p>
+
+        </div>
+    </Section>
+
+    <br>
+
+    <!--Features Page-->
+    <section id="features" class="featurespage">
+        <div class="container-1">
+
+            <!-- Left Image -->
+            <div class="hero-image">
+                <img src="/assets/laptopscreen.png" alt="Laptop with leaf" />
+            </div>
+
+
+            <!-- Right Content -->
+            <div class="featuresheading-content">
+                <article class="toptext">
+                    <h2>We Create Something New</h2>
+                    <p>
+                        We have created a new product that will help designers, <br> developers and companies
+                        create websites for their <br> startups quickly and easily.
+                    </p>
+                </article>
+
+
+
+
+                <div class="features-2">
+                    <div class="featureicon-1">
+                        <i class="icon"><img src="/assets/icons/rect2icons.svg" alt="Resote"></i>
+                        <h4>30 New Feature Pages</h4>
+                        <p class="smpl-para">Startup Framework contains <br> components and complex blocks <br>
+                            which
+                            can
+                            easily...</p>
+                    </div>
+
+                    <div class="featureicon-2">
+                        <i class="icon"><img src="/assets/icons/diamondicon.svg" alt="Daimond icon"></i>
+                        <h4>Useful Symbol Components</h4>
+                        <p class="smpl-para">Samples will show you the feeling on <br> how to play around using the
+                            <br>
+                            components.
+                        </p>
+                    </div>
+                    <div class="pagination-dots2">
+                        <div class="dot active" onclick="goToSlide(0)"></div>
+                        <div class="dot" onclick="goToSlide(1)"></div>
+                        <div class="dot" onclick="goToSlide(2)"></div>
+                        <div class="dot" onclick="goToSlide(3)"></div>
+                        <div class="dot" onclick="goToSlide(4)"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <br>
+
+
+    <section id="froms" clas="formsection">
+        <div class="main-container">
+            <div class="content-wrapper2">
+                <div class="left-content">
+                    <h1 class="hero-title2">We solve digital problems with an outstanding creative flare</h1>
+                    <p class="hero-description2">We have created a new product that will help designers,
+                        developers and companies create websites for their startups quickly and easily.</p>
+                </div>
+                <div class="right-content">
+                    <div class="form-container">
+                        <div class="form-header">
+                            <div class="tab-navigation"><a href="#" class="tab-link active" id="signupTab">Sign Up</a><a
+                                    href="#" class="tab-link inactive" id="loginTab">Login</a></div>
+                            <div class="tab-indicators">
+                                <div class="tab-line-full"></div>
+                                <div class="tab-line-active" id="activeIndicator"></div>
+                            </div>
+                        </div>
+                        <div class="form-fields"><input type="email" class="form-input" placeholder="Your email"
+                                required /><input type="password" class="form-input" placeholder="Your password"
+                                required /><button type="submit" class="primary-button">Create an Account</button></div>
+                        <div class="divider-section">
+                            <div class="divider-line"></div><span class="divider-text">or</span>
+                            <div class="divider-line"></div>
+                        </div><button type="button" class="secondary-button">Login via Twitter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+
+    <section id="testimonial" class="testimonialsection">
+
+        <div class="testimonial-container">
+            <h2>Our Happy Clients</h2>
+            <br>
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+
+                <div class="testimonial-top">
+                    <img src="/assets/Userpic1.png" alt="Client 1">
+                    <p>Get a fully retina ready site when you build with Startup Framework. Websites look sharper and
+                        more gorgeous on devices with retina display support.</p>
+                </div>
+                <h3>Rayhan Curran</h3>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+                <div class="testimonial-top">
+                    <img src="/assets/Userpic2.png" alt="Client 2">
+                    <p>As a business targeting high net worth individuals, we were looking for a slick, cool and
+                        minimalistic design for our website.</p>
+                </div>
+                <h3>Kayley Frame</h3>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial">
+                <div class="testimonial-top">
+                    <img src="assets/Userpic3.png" alt="Client 3">
+                    <p>The most important part of the Startup Framework is the samples. They gave us inspiration and a
+                        clear direction for our site.</p>
+                </div>
+                <h3>Gene Whitfield</h3>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial">
+                <div class="testimonial-top">
+                    <img src="/assets/Userpic4.png" alt="Client 4">
+                    <p>I've built my website with Startup just in one day, and it was ready-to-go immediately without
+                        any hassle.</p>
+                </div>
+                <h3>Allan Kim</h3>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section id="call to action" class="heroaction">
+        <h1>Easy to setup.<br>Easy to maintain</h1>
+        <p>
+            Bootstrap is a widely-used, sleek, intuitive and powerful front-end framework
+            for faster and easier web development.
+        </p>
+        <div class="buttonsaction">
+            <button class="play-btn">▶</button>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <br>
+
+    <section id="show" class="showcase">
+        <!-- Header -->
+        <div class="showcase__top">
+            <h2 class="showcase__title">Last works</h2>
+            <button class="showcase__btn">View all Works</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="works">
+            <!-- Card 1 -->
+            <a class="card" href="#">
+                <img class="card__img" src="/assets/Workplace1.png" alt="Mozart Project" />
+                <p class="card__eyebrow">UI KIT</p>
+                <h3 class="card__title">Mozart Project</h3>
+            </a>
+
+            <!-- Card 2 -->
+            <a class="card" href="#">
+                <img class="card__img" src="/assets/Workplace2.png" alt="Startup Framework 2.0" />
+                <p class="card__eyebrow">Framework</p>
+                <h3 class="card__title">Startup Framework 2.0</h3>
+            </a>
+
+            <!-- Card 3 -->
+            <a class="card" href="#">
+                <img class="card__img" src="/assets/Workplace3.png" alt="From the Sky" />
+                <p class="card__eyebrow">Photos</p>
+                <h3 class="card__title">From the Sky</h3>
+            </a>
+
+            <!-- Card 4 -->
+            <a class="card" href="#">
+                <img class="card__img" src="/assets/Workplace4.png" alt="Air Forces" />
+                <p class="card__eyebrow">Pictures</p>
+                <h3 class="card__title">Air Forces</h3>
+            </a>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- Teams Section -->
+    <scetion id="teams" class="teamsection">
+        <div class="teamcontainer">
+            <h1>Startup Crew</h1>
+            <p>
+                The most important part of the Startup Framework is the samples.
+                The samples form a set of 25 usable pages you can use as is or you can add
+                new blocks from UI Kit.
+            </p>
+
+            <div class="team">
+                <!-- Member 1 -->
+                <div class="member">
+                    <img src="/assets/Userpic4.5suc.png" alt="Leah Salomon">
+                    <h3>Leah Salomon</h3>
+                    <p>UI Designer</p>
+                    <div class="social-icons">
+                        <i class="fab fa-twitter"><img src="/assets/icons/twittericon.svg" alt="TwitterIcon"></i>
+                        <i class="fab fa-facebook-f"><img src="/assets/icons/facebook-icon.svg" alt="Facebook-icon"></i>
+                        <i class="fab fa-dribbble"><img src="/assets/icons/menumiddle-icon.svg" alt="Dribbble"></i>
+                        <i class="fab fa-instagram"><img src="/assets/icons/instagramicon.svg" alt="Instagramicon"></i>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="member">
+                    <img src="/assets/userpic5suc.png" alt="Colin Timmons">
+                    <h3>Colin Timmons</h3>
+                    <p>UX Designer</p>
+                    <div class="social-icons">
+                        <img src="/assets/icons/twittericon.svg" alt="TwitterIcon"><i class="fab fa-twitter"></i>
+                        <img src="/assets/icons/menumiddle-icon.svg" alt="Dribbble"><i class="fab fa-dribbble"></i>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="member">
+                    <img src="/assets/Userpic6suc.png" alt="Miguel Osborne">
+                    <h3>Miguel Osborne</h3>
+                    <p>Front-end Developer</p>
+                    <div class="social-icons">
+                        <img src="/assets/icons/skype-icon.svg" alt="Skype-icon"><i class="fab fa-skype"></i>
+                        <img src="/assets/icons/medium-icon.svg" alt="Medium-icon"><i class="fab fa-medium"></i>
+                        <img src="/assets/icons/git-icon.svg" alt="Git-Icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="member">
+                    <img src="/assets/Userpic7suc.png" alt="Taylor Simon">
+                    <h3>Taylor Simon</h3>
+                    <p>Product Manager</p>
+                    <div class="social-icons">
+                        <img src="/assets/icons/twittericon.svg" alt="TwitterIcon"><i class="fab fa-twitter"></i></a>
+                        <img src="/assets/icons/instagramicon.svg" alt="Instagramicon"><i
+                            class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="member">
+                    <img src="/assets/Userpic8suc.png" alt="Steven MacAlister">
+                    <h3>Steven MacAlister</h3>
+                    <p>Copyrighter</p>
+                    <div class="social-icons">
+                        <img src="/assets/icons/twittericon.svg" alt="TwitterIcon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <br>
+
+        <section id="contactpage" class="contactsection">
+            <div class=" contactoverlay">
+            </div>
+            <div class="contact-container">
+                <div class="info">
+                    <h1>Let's Keep in Touch</h1>
+                    <p>We have created a new product that will help designers, developers and companies create websites
+                        for their startups quickly and easily.</p>
+                    <ul>
+                        <li><i class="fa fa-phone"><img src="/assets/icons/phone-icon.svg" alt="Call Icon"></i> +1 555
+                            505 5050</li>
+                        <li><i class="fa fa-envelope"><img src="/assets/icons/mail-icon.svg" alt="Emailicon"></i>
+                            info@designmodo.com</li>
+                        <li><i class="fa fa-map-marker-alt"><img src="/assets/icons/building-icon.svg"
+                                    alt="fa-map-marker-alt"></i> San Francisco, CA 560 Bush St & 20th Ave, Apt5 San
+                            Francisco, 230909</li>
+                    </ul>
+                </div>
+                <div class="contactform-box">
+                    <form id="contactForm">
+                        <div class="inline">
+                            <div>
+                                <label>Your Name</label>
+                                <input type="text" placeholder="First name" required>
+                            </div>
+                            <div>
+                                <label>Budget</label>
+                                <select>
+                                    <option>$500</option>
+                                    <option>$1,000</option>
+                                    <option>$2,500</option>
+                                    <option>$5,000+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label>Input Field</label>
+                        <input type="email" placeholder="name@mail.com" required>
+                        <label>Your Message</label>
+                        <textarea placeholder="Message"></textarea>
+                        <div class="checkbox">
+                            <input type="checkbox" id="copy" checked>
+                            <label for="copy">Send me a copy</label>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section id="pricingplan" class="pricingsection">
+            <h1>Plans & Pricing</h1>
+            <p>Startup Framework is free forever — you only pay for custom domain hosting or to export your site.</p>
+
+            <div class="plans">
+                <!-- Starter Plan -->
+                <div class="plan">
+                    <h2>Starter</h2>
+                    <div class="price">9.99 $</div>
+                    <ul>
+                        <li>&checkmark;<i class="fa fa-check"></i> 2 GB of space</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> 14 days of backups</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Social integrations</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Client billing</li>
+                        <li><i class="fa fa-check"></i> Remote access</li>
+                        <li><i class="fa fa-check"></i> Custom domain</li>
+                        <li><i class="fa fa-check"></i> 24 hours support</li>
+                        <li><i class="fa fa-check"></i> Admin tools</li>
+                        <li><i class="fa fa-check"></i> Collaboration tools</li>
+                        <li><i class="fa fa-check"></i> User management</li>
+                    </ul>
+                    <button>Get Started</button>
+                </div>
+
+                <!-- Pricing Plan -->
+                <div class="plan">
+                    <h2>Professional</h2>
+                    <div class="price">19.99 $</div>
+                    <ul>
+                        <li>&checkmark;<i class="fa fa-check"></i> 2 GB of space</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> 14 days of backups</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Social integrations</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Client billing</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Remote access</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Custom domain</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> 24 hours support</li>
+                        <li><i class="fa fa-check"></i> Admin tools</li>
+                        <li><i class="fa fa-check"></i> Collaboration tools</li>
+                        <li><i class="fa fa-check"></i> User management</li>
+                    </ul>
+                    <button>Get Started</button>
+                </div>
+
+                <!-- Team Plan -->
+                <div class="plan">
+                    <h2>Team</h2>
+                    <div class="price">49.99 $</div>
+                    <ul>
+                        <li>&checkmark;<i class="fa fa-check"></i> 2 GB of space</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> 14 days of backups</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Social integrations</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Client billing</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Remote access</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Custom domain</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> 24 hours support</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Admin tools</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> Collaboration tools</li>
+                        <li>&checkmark;<i class="fa fa-check"></i> User management</li>
+                    </ul>
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <footer>
+            <!-- Top Row -->
+            <div class="top">
+                <div class="logo">Startup 3</div>
+                <div class="links">
+                    <a href="#">&nbsp;&nbsp;Privacy Policy</a>
+                    <a href="#">&nbsp;Terms</a>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-twitter"><img src="/assets/icons/twittericon.svg"
+                                alt="TwitterIcon"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"><img src="/assets/icons/facebook-icon.svg"
+                                alt="Facebook-icon"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"><img src="/assets/icons/google-plus icon.svg"
+                                alt="Google-plus"></i></a>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr>
+
+            <!-- Bottom Row -->
+            <div class="bottom">
+                <div class="menu">
+                    <a href="#">Tour</a>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing Plans</a>
+                    <a href="#">Our Works</a>
+                    <a href="#">Brands</a>
+                    <a href="#">Contacts</a>
+                </div>
+                <div class="copyright">© 2017 Designmodo. All rights reserved.</div>
+            </div>
+        </footer>
+
+
+
+        <script src="script.js"></script>
+
+        <div style="margin-top: 500px;"></div>
+</body>
+
+</html>
